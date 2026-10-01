@@ -1,0 +1,77 @@
+.column {
+  background: var(--color-column-bg);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  min-width: 260px;
+  min-height: 200px;
+  transition: outline-color 0.15s ease;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
+
+.columnOver {
+  outline-color: var(--color-primary);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.15px;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.count {
+  background: var(--color-surface);
+  border-radius: var(--radius-full);
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-height: 40px;
+}
+
+.emptyHint {
+  margin: 0;
+  padding: 8px 0;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.addButton:hover {
+  color: var(--color-text);
+}
+
+.addIcon {
+  font-size: 1rem;
+  line-height: 1;
+}
